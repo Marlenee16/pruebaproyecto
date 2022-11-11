@@ -1,2 +1,3 @@
 # pruebaproyecto
-Bienvenidos xd
+Proyecto de Programacion Web 
+Realizar pruebas
