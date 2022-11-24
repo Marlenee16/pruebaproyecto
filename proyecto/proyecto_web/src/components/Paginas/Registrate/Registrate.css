@@ -1,0 +1,70 @@
+.New{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #D5F1C8;
+    
+    
+}
+  
+#tablas{
+    left: 5% ;
+    box-sizing: border-box;
+    position: absolute;
+    top: 5%;
+}
+  
+.guardarnew{
+    box-sizing: border-box;
+    width: 47%;
+   left: 210%;
+    top: 78%;
+   background: #D9D9D9;
+   border: 1px solid #000000;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   position: absolute;
+  font-family: 'Vidaloka';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 58px;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  cursor: pointer;
+}
+  
+.botonn{
+    width: 47%;
+   left: 210%;
+    top: 90%;
+    position: absolute;
+  font-style: normal;
+  font-size: 15px;
+  align-items: flex-end;
+  text-align: center;
+  line-height: 1.4;
+}
+  
+.logoR{
+    position: absolute;
+  flex-direction: column;
+  left: 200%;
+  top: -5%;
+  
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 0px;
+  display: flex;
+  
+  text-align: center;
+  
+  color: #000000;
+    width: 270px;
+  height: 200px;
+  mix-blend-mode: darken;
+}

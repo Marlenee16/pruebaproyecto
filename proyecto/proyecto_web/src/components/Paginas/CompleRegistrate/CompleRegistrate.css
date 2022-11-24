@@ -1,0 +1,51 @@
+.formInput{
+    display: flex;
+    flex-direction: column;
+    width: 435px;
+    
+}
+
+
+.inputregis{
+    width: 400px;
+    padding: 15px;
+    margin: 5px 0px 20px 0px;
+    border-radius: 10px ;
+    border: 1px solid grey;
+}
+
+
+.labelR{
+    font-family: 'Varela';
+font-style: normal;
+font-weight: 300;
+font-size: 25px;
+line-height: 40px;
+display: flex;
+align-items: flex-end;
+text-transform: capitalize;
+
+}
+
+
+
+.Span{
+    font-size: 12px;
+    padding: 3px;
+    color: red;
+    display: none;
+}
+
+.inputregis:invalid[focused="true"] ~ span{
+    display: block;
+}
+
+
+#5.formInput{
+   width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 25px 10px; 
+    font-size: 15px;
+}
+

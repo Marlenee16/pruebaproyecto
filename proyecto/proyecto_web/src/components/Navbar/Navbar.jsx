@@ -34,7 +34,7 @@ class Navbar extends Component {
             })}
            
           </ul>
-          < a href="/Registrate"> <Button> Registrate </Button></a>
+          < a href="/Registrate"> <Button onClick={(e) => {e.preventDefault();window.location.href='/Registrate';}}> Registrate </Button></a>
 
         </nav>
 

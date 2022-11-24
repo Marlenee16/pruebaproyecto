@@ -8,6 +8,8 @@ import Programa from './components/Paginas/Programa/Programa';
 import Recomendaciones from './components/Paginas/Recomendaciones/Recomendaciones';
 import Bienvenida from './components/Bienvenida';
 import Footer from './components/Footer/Footer';
+import Registrate from './components/Paginas/Registrate/Registrate';
+import Login from './components/Paginas/Login/Login';
 
 
 function App() {
@@ -24,6 +26,9 @@ function App() {
         <Route path="/PesoIdeal" element={<PesoIdeal/>} />
         <Route path="/Programa" element={<Programa/>} />
         <Route path="/Recomendaciones" element={<Recomendaciones/>} />
+        <Route  path="/login" element={<Login/>} />
+        <Route  path="/Registrate" element={<Registrate/>} />
+        
         </Routes>
         <Bienvenida/>
 
