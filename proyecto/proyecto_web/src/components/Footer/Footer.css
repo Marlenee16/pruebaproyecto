@@ -1,0 +1,274 @@
+
+
+.footer-container {
+    background-color:white;
+    padding: 1rem 0 ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+  }
+  
+
+  
+  /* Social Icons */
+  .social-icon-link {
+    color: rgb(80, 123, 203);
+    font-size: 25px;
+
+  }
+  
+  .social-media {
+    width: 50%;
+
+
+  }
+  
+  .social-media-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1000px;
+    margin: 40px auto 0 auto;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding-top: 10px;
+    color: darkblue;
+
+
+  }
+  
+  
+  .website-rights {
+    color: black;
+    left: 50px;
+    font-size: 17px;
+    width:100%;
+    
+
+
+
+  }
+
+  .social-media-wrap > p{
+    font-size: 20px;
+    color: brown;
+    width: 100%;
+    font-size: 35px;
+    padding-left: 200px;
+  }
+
+  .social-icons{
+    margin: 20px;
+    width: 50%;
+  }
+  .social-media-wrap {
+    flex-direction:column;
+    width: 100%;
+    padding-bottom: 29px;
+    left: 90%;
+
+
+
+
+
+  }
+
+
+  .footer-container .website-rights{
+    font-size: 30px;
+    width: 150%;
+    padding-top: 55px;
+  }
+
+
+
+  .fab.fa-facebook-f{
+    font-size: 55px;
+
+
+  }
+
+  .fab.fa-instagram{
+    font-size: 55px;
+
+  }
+
+  .fab.fa-google{
+    font-size: 55px;
+
+  }
+
+
+  @media screen and (max-width: 1328px) {
+
+
+    .footer-container .social-media{
+      width: 100%;
+      margin: 50px;
+
+
+
+
+    }
+
+    .footer-container .social-icons{
+      margin: 10px;
+      width: 50%;
+
+
+    }
+    .social-media-wrap {
+      flex-direction:column;
+      width: 100%;
+      padding-bottom: 29px;
+      left: 90%;
+
+
+
+
+    }
+
+
+    .footer-container .social-media .social-media-wrap .website-rights{
+      font-size: 30px;
+      width: 110%;
+      padding-top: 76px;
+      padding-left: 0px;
+
+    }
+
+    .footer-container .social-media .social-media-wrap p{
+      font-size: 30px;
+      width: 90%;
+      padding-left: 400px;
+
+      
+  }
+
+
+    .fab.fa-facebook-f{
+      font-size: 60px;
+
+
+    }
+
+    .fab.fa-instagram{
+      font-size: 60px;
+
+    }
+
+    .fab.fa-google{
+      font-size: 60px;
+
+    }
+  }
+
+  
+  
+  @media screen and (max-width: 960px) {
+
+    .footer-container{
+      width: 100%;
+
+
+    }
+    .footer-container .social-icons{
+
+      width: 60%;
+    }
+
+    .footer-container .social-media{
+
+      height: 100%;
+      width: 80%;
+    }
+
+
+    .footer-container .social-media .social-media-wrap p{
+        font-size: 25px;
+        width: 65%;
+        padding-left: 50px;
+
+
+        
+    }
+
+   .footer-container .social-media .social-media-wrap .website-rights{
+
+      font-size: 20px;
+      width: 99%;
+      padding-left: 90px;
+
+ 
+    }
+
+
+
+    .fab.fa-facebook-f{
+      font-size: 40px;
+
+    }
+
+    .fab.fa-instagram{
+      font-size: 40px;
+
+    }
+
+    .fab.fa-google{
+      font-size: 40px;
+
+    }
+  }
+
+
+  
+ 
+
+
+  @media screen and (max-width: 480px) {
+    .footer-container{
+      width: 100%;
+
+    }
+
+    .social-media{
+      width: 40%;
+
+    }
+
+    .social-icons{
+      margin: 30px;
+      width: 95%;
+    }
+
+    .social-media-wrap {
+      width: 100%;
+      left: 90%;
+
+    }
+
+    
+
+    .footer-container .social-media .social-media-wrap > p{
+        font-size: 17px;
+        width: 90%;
+        padding-left:50px;
+        
+    }
+
+    .footer-container .social-media .social-media-wrap .website-rights{
+      font-size:12px;
+      width: 125%;
+      padding-left: 20px;
+      padding-top: 50px;
+    }
+
+  }
