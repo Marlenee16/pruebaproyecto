@@ -26,7 +26,7 @@ function App() {
         <Route path="/PesoIdeal" element={<PesoIdeal/>} />
         <Route path="/Programa" element={<Programa/>} />
         <Route path="/Recomendaciones" element={<Recomendaciones/>} />
-        <Route  path="/login" element={<Login/>} />
+        <Route  path="/Login" element={<Login/>} />
         <Route  path="/Registrate" element={<Registrate/>} />
         
         </Routes>

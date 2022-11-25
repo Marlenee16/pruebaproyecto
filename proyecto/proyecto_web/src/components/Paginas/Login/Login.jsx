@@ -1,14 +1,11 @@
 import React from 'react';
-
 import logo from "../../../assets/logo.png"
 import './Login.css';
-import { useEffect} from 'react';
+import { useEffect } from 'react';
 import jwt_decode from "jwt-decode";
 import { Link } from "react-router-dom/dist";
 
 function Login () {
-  
-
   
 
   function handleCallbackResponse(response) {
@@ -58,7 +55,7 @@ function Login () {
                      <input className="textregistrar" type="text" placeholder="password"/>
                      <button className="botoninicio" type="button" 
                      onClick={(e) => {e.preventDefault();window.location.href='/Prueba';}}>Login</button>
-                     <label className="linkregistrar"><Link to="/New">¿No tienes cuenta? Registrate.</Link> </label>
+                     <label className="linkregistrar"><Link to="/Registrate">¿No tienes cuenta? Registrate.</Link> </label>
                 </div>
             </div>
             <img src={logo} alt="logo" className="logo"></img>
