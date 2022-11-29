@@ -8,7 +8,13 @@ import Recomendaciones from './components/Paginas/Recomendaciones/Recomendacione
 import Registrate from './components/Paginas/Registrate/Registrate';
 import Login from './components/Paginas/Login/Login';
 import Home from './components/Paginas/Home/Home';
-
+import Proteinas from './components/Paginas/Recetario/Proteinas/Proteinas';
+import Vitaminas from './components/Paginas/Recetario/Vitaminas/Vitaminas';
+import Grasas from './components/Paginas/Recetario/Grasas/Grasas';
+import Vegano from './components/Paginas/Recetario/Vegano/Vegano';
+import Faciles from './components/Paginas/Recetario/Faciles/Faciles';
+import Salvador from './components/Paginas/Recetario/Salvador/Salvador';
+import Postres from './components/Paginas/Recetario/Postres/Postres';
 function App() {
 
   return (
@@ -23,7 +29,13 @@ function App() {
         <Route  path="/login" element={<Login/>} />
         <Route  path="/Registrate" element={<Registrate/>} />
 
-        
+        <Route path='/Proteinas' element={<Proteinas/>}/>
+        <Route path='/Vitaminas' element={<Vitaminas/>}/>
+        <Route path='/Grasas' element={<Grasas/>}/>
+        <Route path='/Vegano' element={<Vegano/>}/>
+        <Route path='/Faciles' element={<Faciles/>}/>
+        <Route path='/Salvador' element={<Salvador/>}/>
+        <Route path='/Postres' element={<Postres/>}/>
         </Routes>
 
 
