@@ -1,22 +1,22 @@
 const { validationResult } = require("express-validator");
 
-module.exports = (req, res, nex) => {
-    //validar de forma generica
-    const errors = validationResult(req);
+module.exports = (req, res, next) => {
+  //validar los parametros (Generica)
+  const errors = validationResult(req);
 
-    //verificar si hay error
-    if (!errors.isEmpty()) {
-    // retorno 400
+  //Vrificamos si hay error
+  if (!errors.isEmpty()) {
+    //Retorno 400
 
-     return res.status(400)
+    return res.status(400)
       .json({
-       errors: errors.array.map(error => ({
-        field: error.param,
-        message: error.msg
-       }))
+        errors: errors.array().map(error => ({
+          field: error.param,
+          message: error.msg
+        }))
       })
-    }
+  }
 
-    // pasar al siguiente funcion 
-    nex();
+  //Paso al siguiente middleware
+  next();
 }

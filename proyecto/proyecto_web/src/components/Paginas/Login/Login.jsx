@@ -1,12 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from "../../../assets/logo.png"
 import './Login.css';
 import { useEffect } from 'react';
 import jwt_decode from "jwt-decode";
-import { Link } from "react-router-dom/dist";
+import { Link, useNavigate } from "react-router-dom/dist";
+import { toast } from 'react-toastify';
+import { useUserContext } from '../../../contexts/UserContext';
 
-function Login () {
+const Login = ({ onLogin = () => { } }) => {
+  const {logout, user} = useUserContext();
   
+  const navigate = useNavigate();
 
   function handleCallbackResponse(response) {
     console.log("Token del usuario: " + response.credential);
@@ -28,6 +32,25 @@ function Login () {
     { theme: "outline", size: "large"}
   );
  }, []);
+ const [identifier, setIdentifier] = useState("");
+ const [password, setPassword] = useState("");
+
+ const errors = {
+  "identifier": !identifier,
+  "password": !password,
+ }
+
+ const hasErrors = () => Object.values(errors).some(error => error);
+
+ const onSubmitHandler = (e) => {
+  e.preventDefault();
+
+  if (hasErrors()) {
+    toast.warn("Wrong fields");
+    return;
+  }
+  onLogin(identifier, password);
+ }
 
     return(
       
@@ -50,12 +73,43 @@ function Login () {
                 <div className="line"/>
                 <di className="or">Ó</di>
                 </div>
+                
                 <div className=" izquierda ">
-                     <input className="textregistrar" type="text" placeholder="Username"/>
-                     <input className="textregistrar" type="text" placeholder="password"/>
-                     <button className="botoninicio" type="button" 
-                     onClick={(e) => {e.preventDefault();window.location.href='/Prueba';}}>Login</button>
+                
+                    <form onSubmit={onSubmitHandler}>
+                    {
+                      !user ?
+                     <>
+                     <input 
+                     className="textregistrar" 
+                     name='identifier'
+                     type={"text"} 
+                     autoComplete='username'
+                     value={identifier}
+                     placeholder="Username"
+                     onChange={({ target }) => { setIdentifier(target.value) }}
+                     />
+                     <input 
+                     className="textregistrar" 
+                     name='password'
+                     type={"password"} 
+                     autoComplete='current-password'
+                     value={password}
+                     placeholder="password"  
+                     onChange={({ target }) => { setPassword(target.value) }}          
+                     /></> : <>
+                      <label className='cerrarS'><h4>cerrar sesion</h4></label></>}
+                     {
+                      !user ?
+                     <>
+                     <button className="botoninicio" type="submit" 
+                     disabled={hasErrors()}>Login</button>
                      <label className="linkregistrar"><Link to="/Registrate">¿No tienes cuenta? Registrate.</Link> </label>
+                     </>: <>
+                   <button className="botonsalir" onClick={() => { logout()}}> Sign out</button> </>
+                     }
+                    </form>
+                  
                 </div>
             </div>
             <img src={logo} alt="logo" className="logo"></img>

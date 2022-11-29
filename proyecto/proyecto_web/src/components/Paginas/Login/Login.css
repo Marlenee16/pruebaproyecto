@@ -75,7 +75,13 @@ justify-content: center;
     background-color: #3e81e7;
 }
 
-
+.cerrarS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: capitalize;
+    color: #273675;
+}
 
 
 .icon{
@@ -94,6 +100,20 @@ justify-content: center;
 .botoninicio{
     width: 200px;
     background-color: #dba345;
+    color: white;
+    font-weight: bold;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+}
+
+.botonsalir{
+    width: 200px;
+    background-color: #643030;
     color: white;
     font-weight: bold;
     border: none;

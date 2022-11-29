@@ -2,96 +2,101 @@ import { useState } from "react";
 import './Registrate.css';
 import FormInput from "../CompleRegistrate/CompleRegistrate";
 import logo from "../../../assets/logo.png"
-import { Link } from "react-router-dom/dist";
 
-function Registrate (){
+import {useNavigate, Link } from 'react-router-dom';
 
-    const [values, setValues] = useState({
-        nombre:"",
-        email:"",
-        contraseña:"",
-        confirmPassword:"",
-        checkbox:"",
-      });
+const LoginForm = ({ onRegister = () => { } }) =>{
 
-      const inputs = [
-        {
-          id:1,
-          name:"nombre",
-          type:"text",
-          placeholder:"Nombre de Usuario",
-          errorMessage:"¡El nombre de usuario debe tener entre 5 y 25 caracteres y no debe incluir ningún carácter especial!",
-          label:"Nombre de Usuario",
-          pattern:"^[A-Za-z]{5,25}$",
-          unique: true,
-          required: true
-        },
-        {
-          id:2,
-          name:"email",
-          type:"email",
-          placeholder:"Correo",
-          errorMessage:"Debe ser una dirección de correo electrónico válida.",
-          label:"Correo",
-          unique: true,
-          required: true
-        },
-        {
-          id:3,
-          name:"contraseña",
-          type:"password",
-          placeholder:"Contraseña",
-          errorMessage:"¡La contraseña debe tener entre 8 y 20 caracteres e incluir al menos 1 letra, 1 número y 1 carácter especial!",
-          label:"Contraseña",
-          pattern: "^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{8,20}$",
-          unique: true,
-          required: true
-        },
-        {
-          id:4,
-          name:"confirmPassword",
-          type:"password",
-          placeholder:"Confirmar Contraseña",
-          errorMessage:"¡Las contraseñas no coinciden!",
-          label:"Confirmar Contraseña",
-          pattern: values.contraseña,
-          unique: true,
-          required: true
-        },
-        {
-          id:5,
-          name:"checkbox",
-          type:"checkbox",
-          required: true,
-          label:"aceptas nuestras condiciones de uso y politica de privacidad."
-        }
-      ]
-    const handleSubmit = (e) => {
-        e.preventDefault();   
-   };
- 
-   const onChange = (e)=>{
-     setValues({ ...values, [e.target.name]: e.target.value });
+  const navigate = useNavigate();
+  const [username, setUsername ] = useState("");
+  const [email, setEmail ] = useState("");
+  const [password, setPassword ] = useState("");
+  const [confirmPassword, setRePassword ] = useState("");
+
+  const errors = {
+    "username": !username || username.length < 4 || username.length > 32,
+    "email": !email,
+    "password": !password || !/^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,20})/.test(password),
+    "confirmPassword": !confirmPassword || password !== confirmPassword
+  }
+  const hasErrors = () => Object.values(errors).some(error=> error);
+
+  const onSubmitHandler = (e) => {
+    e.preventDefault();
+  
+    if (hasErrors()) {
+      toast.warn("Wrong fields");
+      return;
+    }
+    onRegister(username, email,password);
    }
- 
-   console.log(values);
+    
+   
     return(
+
         <div className="New">
-        <form id="tablas" onSubmit={handleSubmit}>
+        <form id="tablas" onSubmit={onSubmitHandler}>
         <div className="logoR"><img src={logo} alt="logo"></img>
         <h1>Registrate</h1></div>
-        {inputs.map((input) => (
-          <FormInput 
-          key={input.id}
-          {...input} 
-          value={values[input.name]} 
-          onChange={onChange}/>
-        ))}
-         <button className="guardarnew" onClick={(e) => {e.preventDefault();window.location.href='/login';}}>Guardar</button>
+      <div className="formInput">
+        <label className="labelR">
+          username de Usuario
+            <input className="inputregis"
+               
+               name='username'
+               type={"text"} 
+               autoComplete='username'
+               value={username}
+               placeholder="Username de usuario"
+               onChange={({ target }) => { setUsername(target.value) }}
+             /><span className="Span">{"¡El username de usuario debe tener entre 5 y 25 caracteres y no debe incluir ningún carácter especial!"}</span>
+        </label>
+
+        <label className="labelR">
+          Correo
+            <input className="inputregis"
+               
+               name='email'
+               type={"email"} 
+               autoComplete='email'
+               value={email}
+               placeholder="e.g. example@example.com"
+               onChange={({ target }) => { setEmail(target.value) }}
+             /><span className="Span">{"Debe ser una dirección de correo electrónico válida."}</span>
+        </label>
+        
+        <label className="labelR">
+          Contraseña
+            <input className="inputregis"
+               
+               name='password'
+               type={"password"} 
+               autoComplete="new-password"
+               value={password}
+               placeholder="Contraseña"
+               onChange={({ target }) => { setPassword(target.value) }}
+             /><span className="Span">{"¡La contraseña debe tener entre 8 y 20 caracteres e incluir al menos 1 letra, 1 número y 1 carácter especial!"}</span>
+        </label>
+
+        <label className="labelR">
+          Confirmar Contraseña
+            <input className="inputregis"
+               
+               name='confirmPassword'
+               type={"password"} 
+               autoComplete='new-password'
+               value={confirmPassword}
+               placeholder="Confirmar Contraseña"
+               onChange={({ target }) => { setRePassword(target.value) }}
+             /><span className="Span">{"¡Las contraseñas no coinciden!"}</span>
+        </label>
+      </div>
+         <button className="guardarnew" type="submit" disabled={hasErrors()} onClick={() => {navigate("/Login")}} >Guardar</button>
         <label className="botonn"><Link to="/Login">¿ya tienes una cuenta? Iniciar Sesion.</Link></label>
         </form>
       </div>
-);
-};
+      
+     );
+    }
 
-export default Registrate;
+export default LoginForm;

@@ -8,6 +8,7 @@ import Recomendaciones from './components/Paginas/Recomendaciones/Recomendacione
 import Registrate from './components/Paginas/Registrate/Registrate';
 import Login from './components/Paginas/Login/Login';
 import Home from './components/Paginas/Home/Home';
+import { useUserContext } from './contexts/UserContext';
 import Proteinas from './components/Paginas/Recetario/Proteinas/Proteinas';
 import Vitaminas from './components/Paginas/Recetario/Vitaminas/Vitaminas';
 import Grasas from './components/Paginas/Recetario/Grasas/Grasas';
@@ -16,8 +17,18 @@ import Faciles from './components/Paginas/Recetario/Faciles/Faciles';
 import Salvador from './components/Paginas/Recetario/Salvador/Salvador';
 import Postres from './components/Paginas/Recetario/Postres/Postres';
 function App() {
+  
+  const {login, register, user } = useUserContext();
 
+  const onLoginHandler = async ( identifier, password) => {
+    await login(identifier,password);
+  }
+
+  const onRegisterHandler = async (username, email, password) => {
+    await register(username, email, password);
+  }
   return (
+
     <div className="App">
   
       <Routes>
@@ -26,8 +37,8 @@ function App() {
         <Route path="/PesoIdeal" element={<PesoIdeal/>} />
         <Route path="/Programa" element={<Programa/>} />
         <Route path="/Recomendaciones" element={<Recomendaciones/>} />
-        <Route  path="/login" element={<Login/>} />
-        <Route  path="/Registrate" element={<Registrate/>} />
+        <Route  path="/Login" element={<Login onLogin={onLoginHandler}/>} />
+        <Route  path="/Registrate" element={<Registrate onRegister={onRegisterHandler}/>} />
 
         <Route path='/Proteinas' element={<Proteinas/>}/>
         <Route path='/Vitaminas' element={<Vitaminas/>}/>
