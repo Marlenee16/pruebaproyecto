@@ -1,3 +1,3 @@
-# pruebaproyecto
+# PROYECTO-GRUPO #40 XAVINETA
 Proyecto de Programacion Web 
-Realizar pruebas
+App Dedicada la nutricion y salud del cuerpo
