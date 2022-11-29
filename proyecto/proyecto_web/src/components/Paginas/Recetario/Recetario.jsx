@@ -74,7 +74,9 @@ function Recetario (){
     
 
     return(
+
     <>
+          <Navbar/>
 
         <h1 className="reset">Recetario</h1><img className="Icon_Receta" src="https://cdn-icons-png.flaticon.com/512/683/683488.png"></img>
   <form className="formulariodebarra" action="#" method="POST" >
@@ -117,6 +119,8 @@ function Recetario (){
 <div className = {classes["posts"]}>
                 { mappedPost }
             </div> */}
+
+            <Footer/>
     </> 
 
 );

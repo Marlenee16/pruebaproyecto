@@ -1,0 +1,52 @@
+.genero{
+    margin-left: 40%;
+    font-size: 38px;
+    color: rgb(237, 195, 87);
+}
+
+.card_genero{
+    justify-items: center;
+}
+.agg{
+    margin-left: 48%;
+    font-size: 34px;
+}
+.ag{
+
+    margin-left: 40%;
+    font-size: 34px;
+    text-decoration: none;
+    background-color: bisque;
+    padding: 1rem 0.5rem;
+    border-radius: 9px;
+}
+
+.imagener{
+    flex-wrap: nowrap;
+    flex-direction:row;
+    display: flex;
+    content: center;
+    justify-content:space-evenly;
+    margin-left: 10px;
+
+
+
+}
+.imagener img{
+    margin: 30px;
+    height: 25rem;
+
+}
+
+.gusto{
+    justify-content:space-evenly;
+    width: 68%;
+
+}
+
+.imagener img:hover{
+scale: 1px 2px;
+
+}
+
+

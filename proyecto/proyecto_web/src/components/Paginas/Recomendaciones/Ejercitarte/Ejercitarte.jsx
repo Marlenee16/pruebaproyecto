@@ -1,7 +1,7 @@
 
-import "./Ejercitate.css"
+import "./Ejercitarte.css"
 
-function Ejercitate(){
+function Ejercitarte(){
 
     return(
     <>
@@ -77,4 +77,4 @@ function Ejercitate(){
 );
 }
 
-export default Ejercitate;
+export default Ejercitarte;

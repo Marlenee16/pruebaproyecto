@@ -16,6 +16,9 @@ import Vegano from './components/Paginas/Recetario/Vegano/Vegano';
 import Faciles from './components/Paginas/Recetario/Faciles/Faciles';
 import Salvador from './components/Paginas/Recetario/Salvador/Salvador';
 import Postres from './components/Paginas/Recetario/Postres/Postres';
+import Datos from './components/Paginas/PesoIdeal/Datos/Datos';
+import Ejercitarte from './components/Paginas/Recomendaciones/Ejercitarte/Ejercitarte';
+
 function App() {
   
   const {login, register, user } = useUserContext();
@@ -47,6 +50,9 @@ function App() {
         <Route path='/Faciles' element={<Faciles/>}/>
         <Route path='/Salvador' element={<Salvador/>}/>
         <Route path='/Postres' element={<Postres/>}/>
+
+        <Route path='/Datos' element={<Datos/>} />
+        <Route path='/Ejercitarte' element={<Ejercitarte/>} />
         </Routes>
 
 

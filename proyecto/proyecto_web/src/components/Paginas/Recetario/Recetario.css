@@ -14,6 +14,7 @@
    text-decoration: none;
    background-color: bisque;
    font-size:30px;
+
 }
 .dolocrim{
     display: flex;
@@ -24,9 +25,9 @@
     top: 50%;
     transform: translate(-50%,-50%);
     background: #069;
-    padding: 10px;
+    padding: 1rem;
     height: 90px;
-    border-radius: 40px;
+    border-radius: 30px;
     color: black;
     
 
@@ -90,7 +91,8 @@
     background: cadetblue;
     margin: 20px;
     box-sizing: border-box;
-    font-size: 50px;
+    font-size: 40px;
+
 }
  /* RESPONSIVE DE DIV CONTAINER */
 @media screen and(max-width:1200px){
@@ -130,9 +132,10 @@
 }
 .Icon_Receta{
 width: 70px;
-top: -120px;
+top: 130px;
 left: 900px;
-position: relative;
+position: absolute;
+
 }
 .Justin{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -152,4 +155,8 @@ position: relative;
     flex-direction: row;
     justify-content: space-around;
     flex-flow:wrap;
+}
+
+.reset{
+    width: 40%;
 }
