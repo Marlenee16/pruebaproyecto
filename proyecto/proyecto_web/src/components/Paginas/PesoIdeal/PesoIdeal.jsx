@@ -1,4 +1,4 @@
-
+import Navbar from "../../Navbar/Navbar";
 
 
 
@@ -6,9 +6,10 @@ function PesoIdeal (){
 
     return(
     <>
+    <Navbar/>
 
 
-<h1>This is PesoIdeal</h1>
+<h1>Crear plan</h1>
     </>
 
 

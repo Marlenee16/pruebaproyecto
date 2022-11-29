@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Handlee&family=Montserrat:wght@100&family=Nerko+One&family=Nova+Oval&family=Patrick+Hand&family=Roboto:wght@100&display=swap');
+.reco{
+    line-height: 1.2em;
+    color:#0000;
+    text-shadow: 
+    0 0 #000,
+    0 1.2em #1095c1;
+    overflow: hidden;
+    transition: .3s;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Exo';
+}
+
+Link{
+    text-decoration:none;
+}
+
+
+.reco:hover{
+    text-shadow: 
+    0 -1.2em #000,
+    0 0 #1094c1;
+
+}
+
+
+.bo{
+    justify-content: center;
+
+
+
+
+}
+.caja1{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    box-shadow:
+    inset 0 -3em 3em rgba(0,0,0,0.1),
+    0 0  0 2px rgb(255,255,255),
+    0.3em 0.3em 1em rgba(0,0,0,0.3);
+
+}
+.image{
+
+    width: 33%;
+    padding-left: 130px;
+}
+
+.image .image1 img{
+    width: 347px;
+    height: 265px;
+}
+
+
+.letra p{
+
+    font-size: 35px;
+    color: brown;
+    font-family: 'Patrick Hand';
+    padding: 0.5rem 1rem;
+    background-color: antiquewhite;
+
+
+}
+
+
+.masinfo{
+    background: #E9F4FF;
+    text-decoration:none;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    cursor: pointer;
+    border-radius: 20px;
+    font-family: 'Nerko One';
+    background:linear-gradient(to right, rgb(215, 204, 122) 50%,#dbdb73 50% ) no-repeat left /200%;
+    
+}
+
+.masinfo:hover{
+    background-position: right;
+    color: black;
+}
+
+.fa-light.fa-books{
+    font-size: 20px;
+    color: #000;
+    border: solid;
+    height: 90px;
+}
+
+
+
+
+@media screen and (min-width: 960px) and (max-width: 1199px)   {
+    .caja1{
+        border: solid;
+        
+        }
+
+    .image{
+        width: 49%;
+        padding-left: 0;
+        border: solid;
+
+
+    }
+    .letra p{
+
+border: solid;
+    
+    
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px)  {
+    .caja1{
+        border: solid;
+        
+        }
+
+    .image{
+        width: 39%;
+        padding-left: 0;
+        border: solid;
+
+        
+
+
+    }
+
+    .image .image1 img{
+        width: 260px;
+        height: 190px;
+        justify-content: flex-start;
+        display: flex;
+        border: solid;
+    }
+
+
+.letra p{
+
+border: solid;
+font-size: 20px;
+
+
+}
+
+.reco{
+
+    font-size: 25px;
+
+}
+    
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+    .reco{
+
+
+        font-size: 20px;
+
+
+    }
+    
+    
+    .caja1{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        box-shadow:
+        inset 0 -3em 3em rgba(0,0,0,0.1),
+        0 0  0 2px rgb(255,255,255),
+        0.3em 0.3em 1em rgba(0,0,0,0.3);
+    
+    }
+    .image{
+    
+        width: 43%;
+        padding-left: 0px;
+   
+
+    }
+    
+    .image .image1 img{
+        width: 200px;
+        height: 190px;
+
+    }
+    
+    
+    .letra p{
+    
+        font-size: 20px;
+        color: brown;
+        font-family: 'Patrick Hand';
+        padding: 0.5rem 1rem;
+        background-color: antiquewhite;
+    
+    
+    }
+    
+    
+    .masinfo{
+        background: #E9F4FF;
+        text-decoration:none;
+        padding: 0.5rem 1rem;
+        margin: 1rem;
+        cursor: pointer;
+        border-radius: 20px;
+        font-family: 'Nerko One';
+        background:linear-gradient(to right, rgb(215, 204, 122) 50%,#dbdb73 50% ) no-repeat left /200%;
+        
+    }
+    
+    .masinfo:hover{
+        background-position: right;
+        color: black;
+    }
+
+    
+}
+
+@media screen  and (min-width:201px) and (max-width: 479px) {
+    .reco{
+
+        font-size: 16px;
+
+    }
+
+    .image .image1 img{
+        width: 120px;
+        height: 120px;
+        display: flex;
+        border: solid;
+
+ 
+    }
+
+    .image{
+        padding-left: 0;
+
+    }
+    
+    
+    .letra p{
+    
+        font-size: 14px;
+    }
+    
+    .masinfo{
+
+        padding: 0.5rem 1rem;
+        margin: 0.5rem;
+        font-size: 15px;
+        
+    }
+}
+
+
+

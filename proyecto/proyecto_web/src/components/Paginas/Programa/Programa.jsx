@@ -2,10 +2,10 @@ import Footer from "../../Footer/Footer";
 import Navbar from "../../Navbar/Navbar";
 import "./Programa.css"
 function Programa (){
-<Navbar/>
+
     return(
     <>
-
+    <Navbar/>
     <div className="contenedor">
     <img src="./src/assets/imagenverduras.png"></img>
     <p> <b>Recomiendanos para <br/>
@@ -19,7 +19,7 @@ function Programa (){
         ayudanos a llegar a mas </b>
     </p>
 
-    <a className="unete" href="#" > <b> Unete </b></a>
+    <a className="unete" href="Registrate" > <b> Unete </b></a>
 
     </div>
     <body>
@@ -57,10 +57,13 @@ function Programa (){
     <div className="preguntas">
     <h4>PREGUNTAS FRECUENTES</h4>
 
-    <div className="interrogantes">
-        <h5> ¿Como Funciona? </h5>
-        <p> Como se mencionó al inicio la apliacion es de uso totalmente gratuito, por lo que no te cuesta nada compartirla y recomendarla, asi ayudaras a más personas.<br/> Si tienes algun comentario y posees cuenta,con total confianza,   
-        <a className="link_comentarios" href="#"> Entra aqui.</a></p>
+    < div className="interrogantes">
+    <h5> ¿Como funciona? </h5>
+        <p> Nos recomiendas y de esa manera compartes con los demas,<br/>los conocimientos de esta aplicacion, asi mismo habra una caja de comentarios <br/> para que puedas compartir experiencias o recetas.  </p>
+    
+        <h5> ¿Tiene un precio? </h5>
+        <p> Como se mencionó al inicio la apliacion es de uso totalmente gratuito, <br/>por lo que no te cuesta nada compartirla y recomendarla, asi ayudaras a más personas.<br/> Si tienes algun comentario y posees cuenta,con total confianza,   
+        <a className="link_comentarios" href="Comentarios"> Entra aqui.</a></p>
     </div>
     </div>
 

@@ -1,3 +1,625 @@
-img{
+.contenedor1{
+    width: 100%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 30rem;
+
+
+
+}
+
+.button_comienza{
+    background-color: rgb(51, 51, 161);
+    color: white;
+    font-size: 25px;
+    font-family:monospace;
+    border-radius: 10px;
+    border-color: aqua;
+    position: absolute;
+    width: 10rem;
+    padding-left: 50px;
+    left: 150px;
+    text-decoration: none;
+    height:2.3rem;
+    top: 60%;
+
+    
+}
+
+.button_comienza:hover{
+    background-color: rgb(191, 72, 72);
+    color: black;
+}
+
+.one{
+    color: rgb(186, 68, 68);
+    font-size: 50px;
+    padding-left: 125px;
+    width: 30%;
+    font-family: 'Patrick Hand';
+
+}
+
+.contenedor1 .somos{
+    font-size: 30px;
+    width: 43%;
+    padding-left: 8%;
+
+
+}
+.contenedor1 .image1  {
+    padding-left: 700px;
+    width: 370px;
+    bottom: 40%;
+    position: absolute;    
+
+}
+
+
+.image1 img{
+    width: 115%;
+    height: 299px;
+
+}
+.cards_Home{
+    text-align: start;
+    width: 20%;
+    
+}
+.contenido{
+    align-items: flex-start;
+    text-align: start;
     width: 100%;
 }
+
+.contenedor2{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    margin-top: 80px;
+
+}
+
+.contenedor3{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    margin:0;
+    margin-top: 150px;
+}
+
+.contenedor4{
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction:row;
+    flex-wrap: nowrap;
+    justify-content:space-around;
+    margin-top: 150px;
+}
+
+.cards_Home .card_1 img{
+
+    width: 300px;
+}
+
+.cards_Home .card_2 img{
+    width: 240px;
+
+
+}
+
+.cards_Home .card_3 img{
+padding-left: 60px;
+width: 150px;
+
+}
+
+.cards_Home .card_4 img{
+    position: relative;
+    width: 250px;
+}
+
+.cards_Home .card_5 img{
+
+    width: 240px;
+    height:23rem;
+    padding-left: 60px;
+}
+
+.cards_Home .card_6 img{
+
+    padding-left:60px;
+    width: 170px;
+
+}
+
+.contenedor2 p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.contenedor3 p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.contenedor4 p{
+    font-size: 25px;
+    text-align: center;
+}
+
+.cards_Home:hover{
+    transform:scale(1.1);
+}
+
+
+
+
+
+@media screen and (min-width: 960px) and (max-width: 1199px)   {
+    .one{
+        padding-left: 99px;
+        font-size: 40px;
+    }
+  .contenedor1 .image1  {
+            width: 40%;  
+            height: 19rem;  
+            top: 20%;
+            padding-left: 0;
+            right: 65px;
+      
+        }
+
+        .image1 img{
+            width: 110%;
+            height: 310px;
+        
+        }
+    
+        h2{
+            font-size: 33px;
+        }
+
+        .button_comienza{
+            font-size: 22px;
+            padding: 0.3rem 0.1rem ;
+            text-align: center;
+            margin-left: -45px;
+            height:1.9rem;
+            top: 58%;
+        }
+
+        .cards_Home .card_3 img{
+            padding-left: 45px;
+            width: 130px;
+            
+            }
+
+            .cards_Home .card_6 img{
+    
+                padding-left:35px;
+                width: 140px;
+            }
+        
+            .contenido{
+           
+                padding-right: 7%;
+                text-align: start;
+                padding-left: 8px;
+                width: 110%;
+        
+            }
+}
+
+@media screen and (min-width: 768px) and (max-width: 959px)  {
+    .one{
+        padding-left: 95px;
+        font-size: 40px;
+    }
+
+    .somos{
+        font-size: 33px;        
+    }
+    .contenedor1 .image1  {
+
+        width: 35%;  
+        height: 15rem;  
+        top: 20%;
+        padding-left: 0;
+        right: 45px;
+    
+    }
+    .image1 img{
+        width: 80%;
+        height: 220px;
+    
+    }
+
+    .button_comienza{
+        font-size: 22px;
+        padding: 0.3rem 0.1rem ;
+        text-align: center;
+        margin-left: -50px;
+        height:1.9rem;
+        top: 60%;
+    }
+
+     h2{
+        font-size: 30px;
+    }
+
+    .cards_Home .card_1 img{
+
+        width: 215px;
+    }
+    
+    .cards_Home .card_2 img{
+        width: 170px;
+    
+    
+    }
+    
+    .cards_Home .card_3 img{
+    padding-left: 30px;
+    width: 130px;
+    
+    }
+    
+    .cards_Home .card_4 img{
+        width: 230px;
+    }
+    
+    .cards_Home .card_5 img{
+    
+        width: 217px;
+        height:19rem;
+        padding-left: 10px;
+    }
+    
+    .cards_Home .card_6 img{
+    
+        padding-left:35px;
+        width: 140px;
+    }
+
+    .contenido{
+   
+        text-align: start;
+        padding-left: 0px;
+        width: 140%;
+
+    }
+
+    .contenido p{
+        font-size: 17px;
+
+    }
+    
+}
+
+@media all and (min-width: 480px) and (max-width: 767px) {
+  
+    .contenedor1{
+        height: 19rem;
+
+
+    }
+    .contenedor1 .one{
+        font-size: 27px;
+        padding: 0;
+        margin-left: 42px;
+        width: 20rem;
+
+    }
+
+    .contenedor1 .somos{
+        font-size: 18px;
+    }
+    .contenedor1 .image1  {
+
+        width: 40%;  
+        height: 12rem;  
+        top: 20%;
+        padding-left: 0;
+        right: 45px;
+        
+        
+    }
+
+    .image1 img{
+        width: 100%;
+        height: 178px;
+    
+    }
+
+    .button_comienza{
+        font-size: 15px;
+        padding: 0.3rem 0.1rem ;
+        text-align: center;
+        margin-left: -80px;
+        height:1.3rem;
+        top: 45%;
+    
+        
+    }
+
+
+     h2{
+        font-size: 25px;
+    }
+
+    .cards_Home .card_1 img{
+
+        width: 178px;
+    }
+    
+    .cards_Home .card_2 img{
+        width: 145px;
+        padding-left:30px;
+    
+    
+    }
+    
+    .cards_Home .card_3 img{
+    padding-left: 30px;
+    width: 110px;
+    
+    }
+    
+    .cards_Home .card_4 img{
+        width: 180px;
+        height: 14.5rem;
+    }
+    
+    .cards_Home .card_5 img{
+    
+        width: 150px;
+        height:13rem;
+        padding-left:5px;
+    }
+    .cards_Home .card_6 img{
+    
+        padding-left:30px;
+        width: 110px;
+        
+    }
+
+    .contenido{
+   
+        padding-right: 5%;
+        text-align: end;
+        padding-left: 0;
+        width: 160%;
+
+    }
+
+    .contenido p{
+        font-size: 17px;
+
+    }
+    
+}
+
+@media screen  and (min-width:201px) and (max-width: 479px) {
+    .contenedor1{
+        height: 19rem;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+    .contenedor1 .one{
+        font-size: 20px;
+        padding-left: 30px;
+        width: 100px;
+
+    }
+
+    .contenedor1 .somos{
+        font-size: 16px;
+        padding-left: 30px;
+    }
+    .contenedor1 .image1  {
+        padding-left: 210px;
+        width: 40%;  
+        height: 10rem;  
+        top: 22%;
+    
+    }
+
+    .image1 img{
+        width: 95%;
+        height: 135px;
+    
+    }
+
+    .button_comienza{
+        font-size: 17px;
+        padding: 0.1rem 0rem ;
+        width: 6rem;
+        text-align: center;
+        margin-left: -90px;
+        height:1.5rem;
+        top: 40%;
+        margin-top:25px;
+    
+        
+    }
+
+
+     h2{
+        font-size: 19px;
+    }
+
+    .cards_Home .card_1 img{
+
+        width: 140px;
+    }
+    
+    .cards_Home .card_2 img{
+        width: 120px;
+    
+    
+    }
+    
+    .cards_Home .card_3 img{
+    padding-left: 8px;
+    width: 108px;
+    
+    }
+    
+    .cards_Home .card_4 img{
+        position: relative;
+        width: 148px;
+    }
+    
+    .cards_Home .card_5 img{
+    
+        width: 150px;
+        height:13rem;
+        padding-left:0px;
+
+    }
+    
+    .cards_Home .card_6 img{
+    
+        padding-left:8px;
+        width: 110px;
+        
+    }
+
+    .contenido{
+   
+        padding-right: 10%;
+        display: flex;
+        text-align: start;
+        padding-left: 0px;
+        width: 153%;
+
+    }
+
+    .contenido p{
+        font-size: 0.9rem;
+    }
+
+
+}
+
+@media screen  and (max-width:390px) {
+    .contenedor1{
+        height: 19rem;
+    }
+    .contenedor1 .one{
+        font-size: 18px;
+        padding-left: 30px;
+
+    }
+
+    .contenedor1 .somos{
+        font-size: 13px;
+        padding-left: 30px;
+        margin-top: 10px;
+    }
+    .contenedor1 .image1  {
+        padding-left: 200px;
+        width: 35%;  
+        height: 10rem;  
+        top: 22%;
+    
+    }
+
+    .image1 img{
+        width: 90%;
+        height: 115px;
+    
+    }
+
+    .button_comienza{
+        font-size: 15px;
+        padding: 0.1rem 0rem ;
+        width: 6rem;
+        text-align: center;
+        margin-left: -100px;
+        height:1.5rem;
+        margin-top: 40px;
+    
+        
+    }
+
+
+     h2{
+        font-size: 16px;
+    }
+
+    .contenedor2{
+        margin: 0;
+    }
+    .cards_Home .card_1 img{
+
+        width: 140px;
+    }
+    
+    .cards_Home .card_2 img{
+        width: 120px;
+    
+    
+    }
+    
+    .cards_Home .card_3 img{
+    padding-left: 8px;
+    width: 108px;
+    
+    }
+    
+    .cards_Home .card_4 img{
+        position: relative;
+        width: 148px;
+    }
+    
+    .cards_Home .card_5 img{
+    
+        width: 150px;
+        height:13rem;
+        padding-left:0px;
+
+    }
+    
+    .cards_Home .card_6 img{
+    
+        padding-left:8px;
+        width: 110px;
+        
+    }
+
+    .contenido{
+   
+        padding-right: 10%;
+        display: flex;
+        text-align: start;
+        padding-left: 0px;
+        width: 153%;
+
+    }
+
+    .contenido p{
+        font-size: 0.9rem;
+    }
+
+
+}
+
+
+
+
+
+

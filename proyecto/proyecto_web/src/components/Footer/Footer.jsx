@@ -7,13 +7,14 @@ function Footer() {
     <div className='footer-container'>
       <section class='social-media'>
         <div class='social-media-wrap'>
-            <p>Somos la mejor nutricion para cualquier salud</p>
+            <p>Somos la mejor nutricion para cualquier salud <br/>
+            </p>
 
 
           <div class='social-icons'>
             <Link
               class='social-icon-link facebook'
-              to='/'
+              to='https://www.facebook.com/profile.php?id=100087945685184&sk=about'
               target='_blank'
               aria-label='Facebook'
             >

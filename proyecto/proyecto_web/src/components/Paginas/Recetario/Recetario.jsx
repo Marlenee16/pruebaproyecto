@@ -1,9 +1,16 @@
+import Navbar from "../../Navbar/Navbar";
 
 function Recetario (){
 
     return(
+        
     <>
-<h1> Recetario </h1>
+    <Navbar/>
+
+    <body>
+    <h1> Recetario </h1>
+    </body>
+
 
     </>
 

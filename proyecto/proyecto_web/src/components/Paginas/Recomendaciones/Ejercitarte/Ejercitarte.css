@@ -1,0 +1,52 @@
+
+
+.contenedor_1 .ejercitarte{
+    font-size: 25px;
+    width: 60%;
+    align-content: center;
+    margin-left: 20%;
+    padding:2rem 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+
+.contenedor_1{
+    align-content: center;
+    width: 100%;
+
+}
+
+.imageejer {
+    justify-content: center;
+    display: flex;
+}
+
+.imageejer img{
+    height: 200px;
+    box-shadow:antiquewhite
+}
+
+.p1{
+    width: 50%;
+    align-items: center;
+    display: flex;
+    margin-left: 27%;
+    margin-top: 50px;
+    font-size: 22px;
+
+}
+
+.ultimo {
+    font-size: 25px;
+    width: 55%;
+    margin-left: 20%;
+    padding:2rem 3rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    align-items: center;
+    display: flex;
+    flex-direction:column;
+    border: solid;
+}
